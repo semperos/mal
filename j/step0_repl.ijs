@@ -9,6 +9,8 @@ readline=: 2!:0 bind 'read line; echo "$line"'
 while. (1=1)
 do.
   echo 'user>'
+NB.   stdout 'user>'
+NB.   'user>' (1!:3) 4
   form=:readline ''
   echo (rep form)
 end.
